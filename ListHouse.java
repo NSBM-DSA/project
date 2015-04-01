@@ -1,4 +1,4 @@
 
 public class ListHouse {
-	int lotNumber;
+	//list house file
 }
