@@ -60,6 +60,9 @@ public class RealEstate {
 		addButton.addActionListener(new ActionListener() {});
 		findButton.addActionListener(new ActionListener() {});
 		clearButton.addActionListener(new ActionListener() {});
+		deleteButton.addActionListener(new ActionListener() {};
+		nextButton.addActionListener(new ActionListener() {});
+		resetButton.addActionListener(new ActionListener() {});
 
 	}
 }
