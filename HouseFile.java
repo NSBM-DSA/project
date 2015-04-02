@@ -1,4 +1,4 @@
 
 public class HouseFile {
-	//House File
+	House File
 }	
