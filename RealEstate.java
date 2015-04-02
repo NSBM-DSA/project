@@ -56,5 +56,13 @@ public class RealEstate {
 		frame.setSize(500, 500);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
+		
+		addButton.addActionListener(new ActionListener() {});
+		findButton.addActionListener(new ActionListener() {});
+		clearButton.addActionListener(new ActionListener() {});
+		deleteButton.addActionListener(new ActionListener() {};
+		nextButton.addActionListener(new ActionListener() {});
+		resetButton.addActionListener(new ActionListener() {});
+
 	}
 }
