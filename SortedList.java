@@ -1,4 +1,4 @@
 
 public class SortedList {
-	LinkedList<ListHouse> sortedHouseList=new LinkedList<ListHouse>();
+	private static LinkedList<ListHouse> sortedHouseList=new LinkedList<ListHouse>();
 }
