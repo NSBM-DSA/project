@@ -14,4 +14,10 @@ public class ListHouse {
 	public void setHouseLotNumber(int houseLotNumber) {
 		this.houseLotNumber = houseLotNumber;
 	}
+	public String getOwnerFirstName() {
+		return ownerFirstName;
+	}
+	public void setOwnerFirstName(String ownerFirstName) {
+		this.ownerFirstName = ownerFirstName;
+	}
 }
