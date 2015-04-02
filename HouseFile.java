@@ -4,4 +4,12 @@ public class HouseFile {
 	private String ownerFirstName, ownerLastName;
 	private ListHouse house;
 	private final SortedList houseList = new SortedList();
+	
+	public HouseFile(int lot, String first, String last, int price, int feet,
+			int bed) {
+		
+	}
+	public HouseFile() {
+
+	}
 }	
