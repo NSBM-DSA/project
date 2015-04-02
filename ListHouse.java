@@ -26,4 +26,22 @@ public class ListHouse {
 	public void setOwnerLastName(String ownerLastName) {
 		this.ownerLastName = ownerLastName;
 	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public int getHouseSquareFeet() {
+		return houseSquareFeet;
+	}
+	public void setHouseSquareFeet(int houseSquareFeet) {
+		this.houseSquareFeet = houseSquareFeet;
+	}
+	public int getBedrooms() {
+		return bedrooms;
+	}
+	public void setBedrooms(int bedrooms) {
+		this.bedrooms = bedrooms;
+	}
 }
