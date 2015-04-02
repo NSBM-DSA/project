@@ -1,20 +1,10 @@
-
 public class HouseFile {
-<<<<<<< HEAD
-	
-	public class HouseFile {
 
-=======
->>>>>>> 645dcab137bdcc68eac0317ac4849b126818edb0
 	private int lotNumber, housePrice, houseSquareFeet, houseBedrooms;
 	private String ownerFirstName, ownerLastName;
 	private ListHouse house;
 	private final SortedList houseList = new SortedList();
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 645dcab137bdcc68eac0317ac4849b126818edb0
 	public HouseFile(int lot, String first, String last, int price, int feet,
 			int bed) {
 		this.lotNumber = lot;
@@ -25,25 +15,18 @@ public class HouseFile {
 		this.houseBedrooms = bed;
 		house = new ListHouse();
 	}
-<<<<<<< HEAD
 
 	public HouseFile() {
 
 	}
 
-	public void addHouse() {
+	public ListHouse addHouse() {
 		house.setHouseLotNumber(lotNumber);
 		house.setOwnerFirstName(ownerFirstName);
 		house.setOwnerLastName(ownerLastName);
 		house.setPrice(housePrice);
 		house.setHouseSquareFeet(houseSquareFeet);
 		house.setBedrooms(houseBedrooms);
+		return house;
 	}
 }
-=======
-	
-	public HouseFile() {
-
-	}
->>>>>>> 645dcab137bdcc68eac0317ac4849b126818edb0
-}	
