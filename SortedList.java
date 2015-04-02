@@ -1,4 +1,4 @@
 
 public class SortedList {
-	// sorting class
+	 sorting class
 }
