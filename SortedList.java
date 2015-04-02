@@ -30,5 +30,5 @@ public class SortedList {
 
 	public void setSortedHouseList(LinkedList<ListHouse> sortedHouseList) {
 		SortedList.sortedHouseList = sortedHouseList;
-	}
+	} 
 }
