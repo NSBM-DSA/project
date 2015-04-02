@@ -20,4 +20,10 @@ public class ListHouse {
 	public void setOwnerFirstName(String ownerFirstName) {
 		this.ownerFirstName = ownerFirstName;
 	}
+	public String getOwnerLastName() {
+		return ownerLastName;
+	}
+	public void setOwnerLastName(String ownerLastName) {
+		this.ownerLastName = ownerLastName;
+	}
 }
