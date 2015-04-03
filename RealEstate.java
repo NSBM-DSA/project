@@ -90,11 +90,8 @@ public class RealEstate {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				houseList.clearHouseList();
-				JOptionPane.showMessageDialog(null, "All Cleared.", "Info ",
-						JOptionPane.INFORMATION_MESSAGE);
-				RealEstate main = new RealEstate();
-				main.clearAll();
+				RealEstate realEstate=new RealEstate();
+				realEstate.clear();
 			}
 		});
 		deleteButton.addActionListener(new ActionListener() {
@@ -258,6 +255,14 @@ public class RealEstate {
 						}
 					}
 				}
+	}
+	
+	private void clear(){
+				houseList.clearHouseList();
+				JOptionPane.showMessageDialog(null, "All Cleared.", "Info ",
+						JOptionPane.INFORMATION_MESSAGE);
+				RealEstate main = new RealEstate();
+				main.clearAll();
 	}
 
 }
