@@ -137,6 +137,23 @@ public class RealEstate {
 				main.clearAll();
 			}
 		});
+		deleteButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (houseList.getHouseList() != null) {
+					houseFile.deleteHouse(Integer.parseInt(lotNumberText
+							.getText()));
+					RealEstate main = new RealEstate();
+					main.clearAll();
+					
+				} else {
+					JOptionPane.showMessageDialog(null,
+							"Unable to process Delete.House List is empty.",
+							"Info", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
 
 	}
 
