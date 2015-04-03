@@ -160,6 +160,36 @@ public class RealEstate {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				int lot = Integer.parseInt(lotNumberText.getText());
+				if (houseList.getHouseList() != null) {
+
+					int index = houseFile.showNext(lot);
+					if (index == -1) {
+						JOptionPane.showMessageDialog(null,
+								"Incorrect lot number.", "Error ",
+								JOptionPane.INFORMATION_MESSAGE);
+					} else {
+						index++;
+						LinkedList<ListHouse> houses = houseList.getHouseList();
+						if (index < houses.size()) {
+							lotNumberText.setText(""
+									+ houses.get(index).getHouseLotNumber());
+							firstNameText.setText(houses.get(index)
+									.getOwnerFirstName());
+							lastNameText.setText(houses.get(index)
+									.getOwnerLastName());
+							priceText
+									.setText("" + houses.get(index).getPrice());
+							feetText.setText(""
+									+ houses.get(index).getHouseSquareFeet());
+							bedRoomsText.setText(""
+									+ houses.get(index).getBedrooms());
+						} else {
+							JOptionPane.showMessageDialog(null, "End.", "Info",
+									JOptionPane.INFORMATION_MESSAGE);
+						}
+					}
+
+				}
 		});
 
 	}
