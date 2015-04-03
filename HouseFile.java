@@ -36,7 +36,6 @@ public class HouseFile {
 		return house;
 	}
 
-	
 	public ListHouse findHouse(int lot) {
 		System.out.println("INSIDE FINDHOUSE()");
 		ListHouse house = null;
@@ -56,12 +55,12 @@ public class HouseFile {
 					house = houses.get(i);
 					break;
 				}
-			} 
+			}
 		}
-		return house;   
+		return house;
 	}
-	
-		public void deleteHouse(int lot) {
+
+	public void deleteHouse(int lot) {
 		boolean FLAG_IS_HOUSE_DELETED = false;
 
 		LinkedList<ListHouse> houses = houseList.getHouseList();
@@ -82,5 +81,24 @@ public class HouseFile {
 			JOptionPane.showMessageDialog(null, "no house found.", "Info ",
 					JOptionPane.INFORMATION_MESSAGE);
 		}
+	}
+
+	public int showNext(int lot) {
+		int index = -1;
+		LinkedList<ListHouse> houses = houseList.getHouseList();
+		if (houses.size() == 0) {
+			JOptionPane.showMessageDialog(null,
+					"No Houses to show. Please input houses..", "Error ",
+					JOptionPane.INFORMATION_MESSAGE);
+		} else {
+			for (int i = 0; i < houses.size(); i++) {
+				if (lot == houses.get(i).getHouseLotNumber()) {
+					index = i;
+					break;
+				}
+			}
+
+		}
+		return index;
 	}
 }
