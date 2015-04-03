@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.LinkedList;
 
 import javax.swing.JOptionPane;
 
+=======
+>>>>>>> 80b4c9a4d5278804b98d2759836c46864a595946
 =======
 >>>>>>> 80b4c9a4d5278804b98d2759836c46864a595946
 public class HouseFile {
@@ -37,6 +40,7 @@ public class HouseFile {
 		return house;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	public ListHouse findHouse(int lot) {
 		System.out.println("INSIDE FINDHOUSE()");
@@ -62,6 +66,8 @@ public class HouseFile {
 		return house;   
 	}
 
+=======
+>>>>>>> 80b4c9a4d5278804b98d2759836c46864a595946
 =======
 >>>>>>> 80b4c9a4d5278804b98d2759836c46864a595946
 }
