@@ -122,4 +122,9 @@ public class HouseFile {
 		houseList.setSortedHouseList(housesToSort);
 		houseList.setHouseList(housesToSort); 
 	}
+	public void printList(LinkedList<ListHouse> houses) {
+		for (int i = 0; i < houses.size(); i++) {
+			System.out.println("" + houses.get(i).getHouseLotNumber());
+		}
+	}
 }
