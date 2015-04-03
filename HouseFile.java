@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
  
 public class HouseFile {
-
+////////////////
 	private int lotNumber, housePrice, houseSquareFeet, houseBedrooms;
 	private String ownerFirstName, ownerLastName;
 	private ListHouse house;
