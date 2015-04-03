@@ -124,5 +124,14 @@ public class RealEstate {
 
 		return FLAG_TEXTFIELD_STATUS;
 	}
+	
+	void clearAll() {
+		lotNumberText.setText("");
+		firstNameText.setText("");
+		lastNameText.setText("");
+		priceText.setText("");
+		feetText.setText("");
+		bedRoomsText.setText("");
+	}
 
 }
