@@ -190,6 +190,11 @@ public class RealEstate {
 					}
 
 				}
+				else {
+					JOptionPane.showMessageDialog(null,
+							"Unable to process Next.House List is empty.",
+							"Info", JOptionPane.INFORMATION_MESSAGE);
+				}
 		});
 		
 		resetButton.addActionListener(new ActionListener() {
