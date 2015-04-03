@@ -240,7 +240,6 @@ public class RealEstate {
 
 		return FLAG_TEXTFIELD_STATUS;
 	}
-	
 	void clearAll() {
 		lotNumberText.setText("");
 		firstNameText.setText("");
