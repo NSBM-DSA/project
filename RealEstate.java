@@ -71,7 +71,8 @@ public class RealEstate {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				
+				RealEstate realEstate=new RealEstate();
+				realEstate.addHouse();
 				
 			}
 			
