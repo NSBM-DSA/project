@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 
 
 public class RealEstate {
+	static HouseFile houseFile = new HouseFile()
 	static final SortedList houseList = new SortedList();
 	static JButton resetButton, nextButton, addButton, deleteButton,clearButton, findButton;
 	static JTextField lotNumberText, firstNameText, lastNameText, priceText,feetText, bedRoomsText;
