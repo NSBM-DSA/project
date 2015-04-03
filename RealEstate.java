@@ -70,7 +70,27 @@ public class RealEstate {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				
-				   
+				RealEstate realEstate = new RealEstate();
+				if (realEstate.checkData()) {
+
+					int lot = Integer.parseInt(lotNumberText.getText());
+					int price = Integer.parseInt(priceText.getText());
+					int feet = Integer.parseInt(feetText.getText());
+					int bedrooms = Integer.parseInt(bedRoomsText.getText());
+
+					HouseFile houseFile = new HouseFile(lot, firstNameText
+							.getText(), lastNameText.getText(), price, feet,
+							bedrooms);
+
+					houseList.addHouseToHouseList(houseFile.addHouse());
+					System.out.println("HOUSE LIST SIZE -"
+							+ houseList.getHouseList().size());
+					realEstate.clearAll();
+				} else {
+					JOptionPane.showMessageDialog(null, "Check all data..",
+							"Info ", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
 			}
 		});
 
