@@ -195,6 +195,7 @@ public class RealEstate {
 							"Unable to process Next.House List is empty.",
 							"Info", JOptionPane.INFORMATION_MESSAGE);
 				}
+			}
 		});
 		
 		resetButton.addActionListener(new ActionListener() {
