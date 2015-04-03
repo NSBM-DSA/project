@@ -171,7 +171,7 @@ public class RealEstate {
 							bedrooms);
 
 					houseList.addHouseToHouseList(houseFile.addHouse());
-					//System.out.println("HOUSE LIST SIZE -"
+					System.out.println("HOUSE LIST SIZE -"
 							+ houseList.getHouseList().size());
 					realEstate.clearAll();
 				} else {
