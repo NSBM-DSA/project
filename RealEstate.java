@@ -126,7 +126,17 @@ public class RealEstate {
 				}
 			}
 		});	
+		clearButton.addActionListener(new ActionListener() {
 
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				houseList.clearHouseList();
+				JOptionPane.showMessageDialog(null, "All Cleared.", "Info ",
+						JOptionPane.INFORMATION_MESSAGE);
+				RealEstate main = new RealEstate();
+				main.clearAll();
+			}
+		});
 
 	}
 
