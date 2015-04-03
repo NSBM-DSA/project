@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 
 
 public class RealEstate {
+	static final SortedList houseList = new SortedList();
 	static JButton resetButton, nextButton, addButton, deleteButton,clearButton, findButton;
 	static JTextField lotNumberText, firstNameText, lastNameText, priceText,feetText, bedRoomsText;
 
@@ -91,11 +92,37 @@ public class RealEstate {
 							"Info ", JOptionPane.INFORMATION_MESSAGE);
 				}
 			}
-			}
+			
 		});
 
 		
 
 
 	}
+
+	boolean checkData() {
+
+		boolean FLAG_TEXTFIELD_STATUS = true;
+
+		if (lotNumberText.getText().length() == 0)
+			FLAG_TEXTFIELD_STATUS = false;
+
+		if (firstNameText.getText().length() == 0)
+			FLAG_TEXTFIELD_STATUS = false;
+
+		if (lastNameText.getText().length() == 0)
+			FLAG_TEXTFIELD_STATUS = false;
+
+		if (priceText.getText().length() == 0)
+			FLAG_TEXTFIELD_STATUS = false;
+
+		if (feetText.getText().length() == 0)
+			FLAG_TEXTFIELD_STATUS = false;
+
+		if (bedRoomsText.getText().length() == 0)
+			FLAG_TEXTFIELD_STATUS = false;
+
+		return FLAG_TEXTFIELD_STATUS;
+	}
+
 }
