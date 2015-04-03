@@ -20,9 +20,7 @@ public class SortedList {
 
 	}
 
-	public void clearHouseList() {
-		houseList = null; 
-	}
+	
 
 	public void setHouseList(LinkedList<ListHouse> house) {
 		SortedList.houseList = house;
