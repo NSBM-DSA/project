@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 import javax.swing.*;
 
@@ -7,8 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-=======
->>>>>>> 80b4c9a4d5278804b98d2759836c46864a595946
 public class RealEstate {
 	static JButton resetButton, nextButton, addButton, deleteButton,clearButton, findButton;
 	static JTextField lotNumberText, firstNameText, lastNameText, priceText,feetText, bedRoomsText;
@@ -67,7 +65,6 @@ public class RealEstate {
 		frame.setSize(500, 500);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
-<<<<<<< HEAD
 		addButton.addActionListener(new ActionListener() {
 			
 			@Override
@@ -78,15 +75,7 @@ public class RealEstate {
 		});
 
 		
-=======
-		
-		addButton.addActionListener(new ActionListener() {});
-		findButton.addActionListener(new ActionListener() {});
-		clearButton.addActionListener(new ActionListener() {});
-		deleteButton.addActionListener(new ActionListener() {};
-		nextButton.addActionListener(new ActionListener() {});
-		resetButton.addActionListener(new ActionListener() {});
->>>>>>> 80b4c9a4d5278804b98d2759836c46864a595946
+
 
 	}
 }

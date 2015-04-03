@@ -15,7 +15,7 @@ public class SortedList {
 			SortedList.houseList.add(house);
 		}
 
-	}
+	} 
 
 	public void clearHouseList() {
 		houseList = null;
