@@ -21,7 +21,7 @@ public class SortedList {
 	}
 
 	public void clearHouseList() {
-		houseList = null;
+		houseList = null; 
 	}
 
 	public void setHouseList(LinkedList<ListHouse> house) {
