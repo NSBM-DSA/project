@@ -1,6 +1,9 @@
+
+
 import java.util.LinkedList;
 
 public class SortedList {
+
 	private static LinkedList<ListHouse> houseList = new LinkedList<ListHouse>();
 	private static LinkedList<ListHouse> sortedHouseList=new LinkedList<ListHouse>();
 
@@ -15,7 +18,7 @@ public class SortedList {
 			SortedList.houseList.add(house);
 		}
 
-	} 
+	}
 
 	public void clearHouseList() {
 		houseList = null;
@@ -30,5 +33,6 @@ public class SortedList {
 
 	public void setSortedHouseList(LinkedList<ListHouse> sortedHouseList) {
 		SortedList.sortedHouseList = sortedHouseList;
-	} 
+	}
+
 }
