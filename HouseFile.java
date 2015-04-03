@@ -101,46 +101,25 @@ public class HouseFile {
 		}
 		return index;
 	}
-	
-	public void deleteHouse(int lot) {
-		boolean FLAG_IS_HOUSE_DELETED = false;
 
-		LinkedList<ListHouse> houses = houseList.getHouseList();
-		for (int i = 0; i < houses.size(); i++) {
-			System.out.println("INSIDE FOR");
-			if (lot == houses.get(i).getHouseLotNumber()) {
-				System.out.println("Found House");
-				houses.remove(i);
-				JOptionPane.showMessageDialog(null, "House found and deleted from the House List.",
-						"Info ", JOptionPane.INFORMATION_MESSAGE);
-				FLAG_IS_HOUSE_DELETED = true;
-				break;
-			}
-
-		}
-
-		if (FLAG_IS_HOUSE_DELETED == false) {
-			JOptionPane.showMessageDialog(null, "no house found.", "Info ",
-					JOptionPane.INFORMATION_MESSAGE);
-		}
-	}
-
-	public int showNext(int lot) {
-		int index = -1;
-		LinkedList<ListHouse> houses = houseList.getHouseList();
-		if (houses.size() == 0) {
-			JOptionPane.showMessageDialog(null,
-					"No Houses to show. Please input houses..", "Error ",
-					JOptionPane.INFORMATION_MESSAGE);
-		} else {
-			for (int i = 0; i < houses.size(); i++) {
-				if (lot == houses.get(i).getHouseLotNumber()) {
-					index = i;
-					break;
+	public void sortHouseList() {
+		LinkedList<ListHouse> housesToSort = houseList.getHouseList();
+		for (int i = 0; i < housesToSort.size(); i++) {
+			int j;
+			boolean flag = true;
+			while (flag) {
+				flag = false;
+				for (j = 0; j < housesToSort.size() - 1; j++) {
+					if (housesToSort.get(j).getHouseLotNumber() > housesToSort
+							.get(j + 1).getHouseLotNumber()) {
+						Collections.swap(housesToSort, j, j + 1);
+						flag = true;
+					}
 				}
 			}
-
 		}
-		return index;
+		printList(housesToSort);
+		houseList.setSortedHouseList(housesToSort);
+		houseList.setHouseList(housesToSort); 
 	}
 }
