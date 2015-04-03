@@ -191,6 +191,23 @@ public class RealEstate {
 
 				}
 		});
+		
+		resetButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (houseList.getHouseList() != null) {
+					houseFile.sortHouseList();
+					RealEstate main = new RealEstate();
+					main.clearAll();
+				} else {
+					JOptionPane.showMessageDialog(null,
+							"Unable to process Reset.House List is empty.",
+							"Info", JOptionPane.INFORMATION_MESSAGE);
+				}
+
+			}
+		});
 
 	}
 
