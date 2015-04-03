@@ -98,17 +98,8 @@ public class RealEstate {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (houseList.getHouseList() != null) {
-					houseFile.deleteHouse(Integer.parseInt(lotNumberText
-							.getText()));
-					RealEstate main = new RealEstate();
-					main.clearAll();
-					
-				} else {
-					JOptionPane.showMessageDialog(null,
-							"Unable to process Delete.House List is empty.",
-							"Info", JOptionPane.INFORMATION_MESSAGE);
-				}
+				RealEstate realEstate=new RealEstate();
+				realEstate.deleteHouse();
 			}
 		});
 
@@ -263,6 +254,19 @@ public class RealEstate {
 						JOptionPane.INFORMATION_MESSAGE);
 				RealEstate main = new RealEstate();
 				main.clearAll();
+	}
+	private void deleteHouse(){
+		if (houseList.getHouseList() != null) {
+					houseFile.deleteHouse(Integer.parseInt(lotNumberText
+							.getText()));
+					RealEstate main = new RealEstate();
+					main.clearAll();
+					
+				} else {
+					JOptionPane.showMessageDialog(null,
+							"Unable to process Delete.House List is empty.",
+							"Info", JOptionPane.INFORMATION_MESSAGE);
+				}
 	}
 
 }
