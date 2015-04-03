@@ -116,16 +116,9 @@ public class RealEstate {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (houseList.getHouseList() != null) {
-					houseFile.sortHouseList();
-					RealEstate main = new RealEstate();
-					main.clearAll();
-				} else {
-					JOptionPane.showMessageDialog(null,
-							"Unable to process Reset.House List is empty.",
-							"Info", JOptionPane.INFORMATION_MESSAGE);
-				}
-
+				
+				RealEstate realEstate=new RealEstate();
+				realEstate.resetHouses();
 			}
 		});
 
@@ -270,6 +263,18 @@ public class RealEstate {
 				else {
 					JOptionPane.showMessageDialog(null,
 							"Unable to process Next.House List is empty.",
+							"Info", JOptionPane.INFORMATION_MESSAGE);
+				}
+	}
+	
+	private void resetHouses(){
+		if (houseList.getHouseList() != null) {
+					houseFile.sortHouseList();
+					RealEstate main = new RealEstate();
+					main.clearAll();
+				} else {
+					JOptionPane.showMessageDialog(null,
+							"Unable to process Reset.House List is empty.",
 							"Info", JOptionPane.INFORMATION_MESSAGE);
 				}
 	}
