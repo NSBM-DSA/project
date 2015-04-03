@@ -32,9 +32,7 @@ public class ListHouse {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public int getHouseSquareFeet() {
-		return houseSquareFeet;
-	}
+
 	public void setHouseSquareFeet(int houseSquareFeet) {
 		this.houseSquareFeet = houseSquareFeet;
 	}
