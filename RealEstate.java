@@ -155,6 +155,13 @@ public class RealEstate {
 			}
 		});
 
+		nextButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				int lot = Integer.parseInt(lotNumberText.getText());
+		});
+
 	}
 
 	boolean checkData() {
