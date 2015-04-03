@@ -12,7 +12,6 @@ public class ListHouse {
 		return houseLotNumber;
 	}
 	public void setHouseLotNumber(int houseLotNumber) {
-		this.houseLotNumber = houseLotNumber;
 	}
 	public String getOwnerFirstName() {
 		return ownerFirstName;
