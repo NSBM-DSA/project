@@ -82,30 +82,8 @@ public class RealEstate {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (lotNumberText.getText().length() == 0) {
-					JOptionPane.showMessageDialog(null, "Enter Lot number..",
-							"Info ", JOptionPane.INFORMATION_MESSAGE);
-				} else {
-					ListHouse house;
-
-					house = houseFile.findHouse(Integer.parseInt(lotNumberText
-							.getText()));
-					if (houseList.getHouseList() != null) {
-						if (house == null) {
-							JOptionPane.showMessageDialog(null,
-									"No house found..", "Info ",
-									JOptionPane.INFORMATION_MESSAGE);
-						} else {
-							lotNumberText.setText(""
-									+ house.getHouseLotNumber());
-							firstNameText.setText(house.getOwnerFirstName());
-							lastNameText.setText(house.getOwnerLastName());
-							priceText.setText("" + house.getPrice());
-							feetText.setText("" + house.getHouseSquareFeet());
-							bedRoomsText.setText("" + house.getBedrooms());
-						}
-					}
-				}
+				RealEstate realEstate=new RealEstate();
+				realEstate.findHouse();
 			}
 		});	
 		clearButton.addActionListener(new ActionListener() {
@@ -252,6 +230,33 @@ public class RealEstate {
 				} else {
 					JOptionPane.showMessageDialog(null, "Check all data..",
 							"Info ", JOptionPane.INFORMATION_MESSAGE);
+				}
+	}
+	
+	private void findHouse(){
+		if (lotNumberText.getText().length() == 0) {
+					JOptionPane.showMessageDialog(null, "Enter Lot number..",
+							"Info ", JOptionPane.INFORMATION_MESSAGE);
+				} else {
+					ListHouse house;
+
+					house = houseFile.findHouse(Integer.parseInt(lotNumberText
+							.getText()));
+					if (houseList.getHouseList() != null) {
+						if (house == null) {
+							JOptionPane.showMessageDialog(null,
+									"No house found..", "Info ",
+									JOptionPane.INFORMATION_MESSAGE);
+						} else {
+							lotNumberText.setText(""
+									+ house.getHouseLotNumber());
+							firstNameText.setText(house.getOwnerFirstName());
+							lastNameText.setText(house.getOwnerLastName());
+							priceText.setText("" + house.getPrice());
+							feetText.setText("" + house.getHouseSquareFeet());
+							bedRoomsText.setText("" + house.getBedrooms());
+						}
+					}
 				}
 	}
 
