@@ -217,7 +217,7 @@ public class RealEstate {
 
 	}
 
-	boolean checkData() {
+	private boolean checkData() {
 
 		boolean FLAG_TEXTFIELD_STATUS = true;
 
@@ -241,7 +241,7 @@ public class RealEstate {
 
 		return FLAG_TEXTFIELD_STATUS;
 	}
-	void clearAll() {
+	private void clearAll() {
 		lotNumberText.setText("");
 		firstNameText.setText("");
 		lastNameText.setText("");
